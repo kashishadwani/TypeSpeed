@@ -31,7 +31,11 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TypeSpeedTheme {
-
+                TypeSpeedApp(
+                isFloatingServiceRunning = isFloatingServiceRunning.value,
+                onStartService = {startFloatingIconService()},
+                onStopService = {stopFloatingIconService()}
+                )
             }
         }
     }
