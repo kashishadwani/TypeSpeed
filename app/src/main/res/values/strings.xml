@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TypeSpeed</string>
+    <string name="accessibility_service_description">Typing Speed Accessibility Service</string>
 </resources>

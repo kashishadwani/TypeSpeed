@@ -38,6 +38,8 @@ class MainActivity : ComponentActivity() {
                 )
             }
         }
+        val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
+        startActivity(intent)
     }
     private fun startFloatingIconService(){
         if(Settings.canDrawOverlays(this)){
